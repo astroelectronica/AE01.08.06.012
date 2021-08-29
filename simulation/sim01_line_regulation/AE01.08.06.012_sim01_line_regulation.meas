@@ -1,0 +1,37 @@
+*line regulation
+*
+*load
+*
+*max current of one led
+.meas iled_max max I(D1)
+*max voltage of load
+.meas vled_max max V(/in,/1)
+*max power of load
+.meas pled_max param (iled_max*vled_max)
+*
+*source
+*
+*max current of source
+.meas isource_max max -I(V1)
+*max voltage of source
+.meas vsource_max max v1
+*max power of source
+.meas psource_max param (isource_max*vsource_max)
+*
+*Results for Isource=700mA
+*
+*Vsource when Isource=700mA
+.meas Vsource_Isource700mA find v1 when -I(V1)=0.7
+.meas Psource_Isource700mA param Vsource_Isource700mA*0.7
+.meas Vled_Isource700mA find V(/in,/1) when -I(V1)=0.7
+.meas Iled_Isource700mA find I(D1) when -I(V1)=0.7
+.meas Pled_Isource700mA param Vled_Isource700mA*Iled_Isource700mA
+*
+*Results for Isource=350mA
+*
+*Vsource when Isource=350mA
+.meas Vsource_Isource350mA find v1 when -I(V1)=0.35
+.meas Psource_Isource350mA param Vsource_Isource350mA*0.35
+.meas Vled_Isource350mA find V(/in,/1) when -I(V1)=0.35
+.meas Iled_Isource350mA find I(D1) when -I(V1)=0.35
+.meas Pled_Isource350mA param Vled_Isource350mA*Iled_Isource350mA

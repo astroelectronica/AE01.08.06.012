@@ -1,0 +1,1043 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Xlamp XM-L white 21S2P"
+Date "2020-04-29"
+Rev "1"
+Comp "astroelectronic@"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5E5FDFB1
+P 2800 1750
+F 0 "#FLG02" H 2800 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 1923 50  0000 C CNN
+F 2 "" H 2800 1750 50  0001 C CNN
+F 3 "~" H 2800 1750 50  0001 C CNN
+	1    2800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5E5FD314
+P 2100 3000
+F 0 "#FLG01" H 2100 3075 50  0001 C CNN
+F 1 "PWR_FLAG" H 2100 3173 50  0000 C CNN
+F 2 "" H 2100 3000 50  0001 C CNN
+F 3 "~" H 2100 3000 50  0001 C CNN
+	1    2100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3150 2100 3000
+Wire Wire Line
+	2800 3150 2100 3150
+$Comp
+L pspice:0 #GND01
+U 1 1 5E5FCC84
+P 2800 3400
+F 0 "#GND01" H 2800 3300 50  0001 C CNN
+F 1 "0" H 2800 3277 50  0000 C CNN
+F 2 "" H 2800 3400 50  0001 C CNN
+F 3 "~" H 2800 3400 50  0001 C CNN
+	1    2800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:VDC V1
+U 1 1 5E5FAC3F
+P 2800 2600
+F 0 "V1" H 2930 2646 50  0000 L CNN
+F 1 "{VIN}" H 2930 2555 50  0000 L CNN
+F 2 "" H 2800 2600 50  0001 C CNN
+F 3 "~" H 2800 2600 50  0001 C CNN
+F 4 "Y" H 2800 2600 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 2800 2600 50  0001 L CNN "Spice_Primitive"
+	1    2800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2800 2800 3150
+Connection ~ 2800 3150
+Wire Wire Line
+	2800 3150 2800 3400
+Wire Wire Line
+	2800 1750 2800 2050
+Wire Wire Line
+	3700 2050 3500 2050
+Wire Wire Line
+	4700 2050 4900 2050
+Wire Wire Line
+	5400 2050 5600 2050
+Wire Wire Line
+	4000 2050 4200 2050
+Wire Wire Line
+	9250 2050 9100 2050
+Wire Wire Line
+	6100 2050 6300 2050
+Wire Wire Line
+	6800 2050 7000 2050
+Wire Wire Line
+	8200 2050 8400 2050
+Wire Wire Line
+	7500 2050 7700 2050
+Wire Wire Line
+	4700 2550 4900 2550
+Wire Wire Line
+	5400 2550 5600 2550
+Wire Wire Line
+	4000 2550 4200 2550
+Wire Wire Line
+	6100 2550 6300 2550
+Wire Wire Line
+	6800 2550 7000 2550
+Wire Wire Line
+	8200 2550 8400 2550
+Wire Wire Line
+	7500 2550 7700 2550
+Wire Wire Line
+	3700 2550 3500 2550
+Wire Wire Line
+	3500 2550 3500 2050
+Wire Wire Line
+	3500 2050 2800 2050
+Wire Wire Line
+	8900 2550 9100 2550
+Wire Wire Line
+	9100 2550 9100 2050
+Connection ~ 9100 2050
+Wire Wire Line
+	9100 2050 8900 2050
+Wire Wire Line
+	4200 2550 4200 2050
+Connection ~ 4200 2550
+Wire Wire Line
+	4200 2550 4400 2550
+Connection ~ 4200 2050
+Wire Wire Line
+	4200 2050 4400 2050
+Wire Wire Line
+	4900 2550 4900 2050
+Connection ~ 4900 2550
+Wire Wire Line
+	4900 2550 5100 2550
+Connection ~ 4900 2050
+Wire Wire Line
+	4900 2050 5100 2050
+Wire Wire Line
+	5600 2550 5600 2050
+Connection ~ 5600 2550
+Wire Wire Line
+	5600 2550 5800 2550
+Connection ~ 5600 2050
+Wire Wire Line
+	5600 2050 5800 2050
+Wire Wire Line
+	6300 2550 6300 2050
+Connection ~ 6300 2550
+Wire Wire Line
+	6300 2550 6500 2550
+Connection ~ 6300 2050
+Wire Wire Line
+	6300 2050 6500 2050
+Wire Wire Line
+	7000 2550 7000 2050
+Connection ~ 7000 2550
+Wire Wire Line
+	7000 2550 7200 2550
+Connection ~ 7000 2050
+Wire Wire Line
+	7000 2050 7200 2050
+Wire Wire Line
+	7700 2550 7700 2050
+Connection ~ 7700 2550
+Wire Wire Line
+	7700 2550 7900 2550
+Connection ~ 7700 2050
+Wire Wire Line
+	7700 2050 7900 2050
+Wire Wire Line
+	8400 2550 8400 2050
+Connection ~ 8400 2550
+Wire Wire Line
+	8400 2550 8600 2550
+Connection ~ 8400 2050
+Wire Wire Line
+	8400 2050 8600 2050
+Text Label 4250 2050 0    50   ~ 0
+1
+Text Label 4950 2050 0    50   ~ 0
+2
+Text Label 5650 2050 0    50   ~ 0
+3
+Text Label 6350 2050 0    50   ~ 0
+4
+Text Label 7050 2050 0    50   ~ 0
+5
+Text Label 7750 2050 0    50   ~ 0
+6
+Text Label 8450 2050 0    50   ~ 0
+7
+Connection ~ 2800 2050
+Wire Wire Line
+	2800 2050 2800 2400
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D1
+U 1 1 5EA1C99A
+P 3850 2050
+F 0 "D1" H 3843 1795 50  0000 C CNN
+F 1 "XM" H 3843 1886 50  0000 C CNN
+F 2 "" H 3850 2050 50  0001 C CNN
+F 3 "~" H 3850 2050 50  0001 C CNN
+F 4 "D" H 3850 2050 50  0001 C CNN "Spice_Primitive"
+F 5 "XM" H 3850 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3850 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XLamp-XML-spice.txt" H 3850 2050 50  0001 C CNN "Spice_Lib_File"
+	1    3850 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D2
+U 1 1 5EA1EF38
+P 3850 2550
+F 0 "D2" H 3843 2295 50  0000 C CNN
+F 1 "XM" H 3843 2386 50  0000 C CNN
+F 2 "" H 3850 2550 50  0001 C CNN
+F 3 "~" H 3850 2550 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 3850 2550 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 3850 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3850 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 3850 2550 50  0001 C CNN "Spice_Primitive"
+	1    3850 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D3
+U 1 1 5EA1FF1B
+P 4550 2050
+F 0 "D3" H 4543 1795 50  0000 C CNN
+F 1 "XM" H 4543 1886 50  0000 C CNN
+F 2 "" H 4550 2050 50  0001 C CNN
+F 3 "~" H 4550 2050 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 4550 2050 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 4550 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4550 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 4550 2050 50  0001 C CNN "Spice_Primitive"
+	1    4550 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D4
+U 1 1 5EA20D3D
+P 4550 2550
+F 0 "D4" H 4543 2295 50  0000 C CNN
+F 1 "XM" H 4543 2386 50  0000 C CNN
+F 2 "" H 4550 2550 50  0001 C CNN
+F 3 "~" H 4550 2550 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 4550 2550 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 4550 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4550 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 4550 2550 50  0001 C CNN "Spice_Primitive"
+	1    4550 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D5
+U 1 1 5EA22A97
+P 5250 2050
+F 0 "D5" H 5243 1795 50  0000 C CNN
+F 1 "XM" H 5243 1886 50  0000 C CNN
+F 2 "" H 5250 2050 50  0001 C CNN
+F 3 "~" H 5250 2050 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 5250 2050 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 5250 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5250 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 5250 2050 50  0001 C CNN "Spice_Primitive"
+	1    5250 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D6
+U 1 1 5EA22A9D
+P 5250 2550
+F 0 "D6" H 5243 2295 50  0000 C CNN
+F 1 "XM" H 5243 2386 50  0000 C CNN
+F 2 "" H 5250 2550 50  0001 C CNN
+F 3 "~" H 5250 2550 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 5250 2550 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 5250 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5250 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 5250 2550 50  0001 C CNN "Spice_Primitive"
+	1    5250 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D7
+U 1 1 5EA241D7
+P 5950 2050
+F 0 "D7" H 5943 1795 50  0000 C CNN
+F 1 "XM" H 5943 1886 50  0000 C CNN
+F 2 "" H 5950 2050 50  0001 C CNN
+F 3 "~" H 5950 2050 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 5950 2050 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 5950 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5950 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 5950 2050 50  0001 C CNN "Spice_Primitive"
+	1    5950 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D8
+U 1 1 5EA241DD
+P 5950 2550
+F 0 "D8" H 5943 2295 50  0000 C CNN
+F 1 "XM" H 5943 2386 50  0000 C CNN
+F 2 "" H 5950 2550 50  0001 C CNN
+F 3 "~" H 5950 2550 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 5950 2550 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 5950 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5950 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 5950 2550 50  0001 C CNN "Spice_Primitive"
+	1    5950 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D9
+U 1 1 5EA25403
+P 6650 2050
+F 0 "D9" H 6643 1795 50  0000 C CNN
+F 1 "XM" H 6643 1886 50  0000 C CNN
+F 2 "" H 6650 2050 50  0001 C CNN
+F 3 "~" H 6650 2050 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 6650 2050 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 6650 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6650 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 6650 2050 50  0001 C CNN "Spice_Primitive"
+	1    6650 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D10
+U 1 1 5EA25409
+P 6650 2550
+F 0 "D10" H 6643 2295 50  0000 C CNN
+F 1 "XM" H 6643 2386 50  0000 C CNN
+F 2 "" H 6650 2550 50  0001 C CNN
+F 3 "~" H 6650 2550 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 6650 2550 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 6650 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6650 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 6650 2550 50  0001 C CNN "Spice_Primitive"
+	1    6650 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D11
+U 1 1 5EA26A07
+P 7350 2050
+F 0 "D11" H 7343 1795 50  0000 C CNN
+F 1 "XM" H 7343 1886 50  0000 C CNN
+F 2 "" H 7350 2050 50  0001 C CNN
+F 3 "~" H 7350 2050 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 7350 2050 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 7350 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7350 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 7350 2050 50  0001 C CNN "Spice_Primitive"
+	1    7350 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D12
+U 1 1 5EA26A0D
+P 7350 2550
+F 0 "D12" H 7343 2295 50  0000 C CNN
+F 1 "XM" H 7343 2386 50  0000 C CNN
+F 2 "" H 7350 2550 50  0001 C CNN
+F 3 "~" H 7350 2550 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 7350 2550 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 7350 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7350 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 7350 2550 50  0001 C CNN "Spice_Primitive"
+	1    7350 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D13
+U 1 1 5EA27D4F
+P 8050 2050
+F 0 "D13" H 8043 1795 50  0000 C CNN
+F 1 "XM" H 8043 1886 50  0000 C CNN
+F 2 "" H 8050 2050 50  0001 C CNN
+F 3 "~" H 8050 2050 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 8050 2050 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 8050 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8050 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 8050 2050 50  0001 C CNN "Spice_Primitive"
+	1    8050 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D14
+U 1 1 5EA27D55
+P 8050 2550
+F 0 "D14" H 8043 2295 50  0000 C CNN
+F 1 "XM" H 8043 2386 50  0000 C CNN
+F 2 "" H 8050 2550 50  0001 C CNN
+F 3 "~" H 8050 2550 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 8050 2550 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 8050 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8050 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 8050 2550 50  0001 C CNN "Spice_Primitive"
+	1    8050 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D15
+U 1 1 5EA2929D
+P 8750 2050
+F 0 "D15" H 8743 1795 50  0000 C CNN
+F 1 "XM" H 8743 1886 50  0000 C CNN
+F 2 "" H 8750 2050 50  0001 C CNN
+F 3 "~" H 8750 2050 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 8750 2050 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 8750 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8750 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 8750 2050 50  0001 C CNN "Spice_Primitive"
+	1    8750 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D16
+U 1 1 5EA292A3
+P 8750 2550
+F 0 "D16" H 8743 2295 50  0000 C CNN
+F 1 "XM" H 8743 2386 50  0000 C CNN
+F 2 "" H 8750 2550 50  0001 C CNN
+F 3 "~" H 8750 2550 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 8750 2550 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 8750 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8750 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 8750 2550 50  0001 C CNN "Spice_Primitive"
+	1    8750 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 3500 3500 3500
+Wire Wire Line
+	4700 3500 4900 3500
+Wire Wire Line
+	5400 3500 5600 3500
+Wire Wire Line
+	4000 3500 4200 3500
+Wire Wire Line
+	9250 3500 9100 3500
+Wire Wire Line
+	6100 3500 6300 3500
+Wire Wire Line
+	6800 3500 7000 3500
+Wire Wire Line
+	8200 3500 8400 3500
+Wire Wire Line
+	7500 3500 7700 3500
+Wire Wire Line
+	4700 4000 4900 4000
+Wire Wire Line
+	5400 4000 5600 4000
+Wire Wire Line
+	4000 4000 4200 4000
+Wire Wire Line
+	6100 4000 6300 4000
+Wire Wire Line
+	6800 4000 7000 4000
+Wire Wire Line
+	8200 4000 8400 4000
+Wire Wire Line
+	7500 4000 7700 4000
+Wire Wire Line
+	3700 4000 3500 4000
+Wire Wire Line
+	3500 4000 3500 3500
+Wire Wire Line
+	8900 4000 9100 4000
+Wire Wire Line
+	9100 4000 9100 3500
+Connection ~ 9100 3500
+Wire Wire Line
+	9100 3500 8900 3500
+Wire Wire Line
+	4200 4000 4200 3500
+Connection ~ 4200 4000
+Wire Wire Line
+	4200 4000 4400 4000
+Connection ~ 4200 3500
+Wire Wire Line
+	4200 3500 4400 3500
+Wire Wire Line
+	4900 4000 4900 3500
+Connection ~ 4900 4000
+Wire Wire Line
+	4900 4000 5100 4000
+Connection ~ 4900 3500
+Wire Wire Line
+	4900 3500 5100 3500
+Wire Wire Line
+	5600 4000 5600 3500
+Connection ~ 5600 4000
+Wire Wire Line
+	5600 4000 5800 4000
+Connection ~ 5600 3500
+Wire Wire Line
+	5600 3500 5800 3500
+Wire Wire Line
+	6300 4000 6300 3500
+Connection ~ 6300 4000
+Wire Wire Line
+	6300 4000 6500 4000
+Connection ~ 6300 3500
+Wire Wire Line
+	6300 3500 6500 3500
+Wire Wire Line
+	7000 4000 7000 3500
+Connection ~ 7000 4000
+Wire Wire Line
+	7000 4000 7200 4000
+Connection ~ 7000 3500
+Wire Wire Line
+	7000 3500 7200 3500
+Wire Wire Line
+	7700 4000 7700 3500
+Connection ~ 7700 4000
+Wire Wire Line
+	7700 4000 7900 4000
+Connection ~ 7700 3500
+Wire Wire Line
+	7700 3500 7900 3500
+Wire Wire Line
+	8400 4000 8400 3500
+Connection ~ 8400 4000
+Wire Wire Line
+	8400 4000 8600 4000
+Connection ~ 8400 3500
+Wire Wire Line
+	8400 3500 8600 3500
+Text Label 4250 3500 0    50   ~ 0
+9
+Text Label 4950 3500 0    50   ~ 0
+10
+Text Label 5650 3500 0    50   ~ 0
+11
+Text Label 6350 3500 0    50   ~ 0
+12
+Text Label 7050 3500 0    50   ~ 0
+13
+Text Label 7750 3500 0    50   ~ 0
+14
+Text Label 8450 3500 0    50   ~ 0
+15
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D17
+U 1 1 5EA404C9
+P 3850 3500
+F 0 "D17" H 3843 3245 50  0000 C CNN
+F 1 "XM" H 3843 3336 50  0000 C CNN
+F 2 "" H 3850 3500 50  0001 C CNN
+F 3 "~" H 3850 3500 50  0001 C CNN
+F 4 "D" H 3850 3500 50  0001 C CNN "Spice_Primitive"
+F 5 "XM" H 3850 3500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3850 3500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models/XLamp-XML-spice.txt" H 3850 3500 50  0001 C CNN "Spice_Lib_File"
+	1    3850 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D18
+U 1 1 5EA404D3
+P 3850 4000
+F 0 "D18" H 3843 3745 50  0000 C CNN
+F 1 "XM" H 3843 3836 50  0000 C CNN
+F 2 "" H 3850 4000 50  0001 C CNN
+F 3 "~" H 3850 4000 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 3850 4000 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 3850 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3850 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 3850 4000 50  0001 C CNN "Spice_Primitive"
+	1    3850 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D19
+U 1 1 5EA404DD
+P 4550 3500
+F 0 "D19" H 4543 3245 50  0000 C CNN
+F 1 "XM" H 4543 3336 50  0000 C CNN
+F 2 "" H 4550 3500 50  0001 C CNN
+F 3 "~" H 4550 3500 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 4550 3500 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 4550 3500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4550 3500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 4550 3500 50  0001 C CNN "Spice_Primitive"
+	1    4550 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D20
+U 1 1 5EA404E7
+P 4550 4000
+F 0 "D20" H 4543 3745 50  0000 C CNN
+F 1 "XM" H 4543 3836 50  0000 C CNN
+F 2 "" H 4550 4000 50  0001 C CNN
+F 3 "~" H 4550 4000 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 4550 4000 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 4550 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4550 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 4550 4000 50  0001 C CNN "Spice_Primitive"
+	1    4550 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D21
+U 1 1 5EA404F1
+P 5250 3500
+F 0 "D21" H 5243 3245 50  0000 C CNN
+F 1 "XM" H 5243 3336 50  0000 C CNN
+F 2 "" H 5250 3500 50  0001 C CNN
+F 3 "~" H 5250 3500 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 5250 3500 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 5250 3500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5250 3500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 5250 3500 50  0001 C CNN "Spice_Primitive"
+	1    5250 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D22
+U 1 1 5EA404FB
+P 5250 4000
+F 0 "D22" H 5243 3745 50  0000 C CNN
+F 1 "XM" H 5243 3836 50  0000 C CNN
+F 2 "" H 5250 4000 50  0001 C CNN
+F 3 "~" H 5250 4000 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 5250 4000 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 5250 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5250 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 5250 4000 50  0001 C CNN "Spice_Primitive"
+	1    5250 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D23
+U 1 1 5EA40505
+P 5950 3500
+F 0 "D23" H 5943 3245 50  0000 C CNN
+F 1 "XM" H 5943 3336 50  0000 C CNN
+F 2 "" H 5950 3500 50  0001 C CNN
+F 3 "~" H 5950 3500 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 5950 3500 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 5950 3500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5950 3500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 5950 3500 50  0001 C CNN "Spice_Primitive"
+	1    5950 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D24
+U 1 1 5EA4050F
+P 5950 4000
+F 0 "D24" H 5943 3745 50  0000 C CNN
+F 1 "XM" H 5943 3836 50  0000 C CNN
+F 2 "" H 5950 4000 50  0001 C CNN
+F 3 "~" H 5950 4000 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 5950 4000 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 5950 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5950 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 5950 4000 50  0001 C CNN "Spice_Primitive"
+	1    5950 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D25
+U 1 1 5EA40519
+P 6650 3500
+F 0 "D25" H 6643 3245 50  0000 C CNN
+F 1 "XM" H 6643 3336 50  0000 C CNN
+F 2 "" H 6650 3500 50  0001 C CNN
+F 3 "~" H 6650 3500 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 6650 3500 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 6650 3500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6650 3500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 6650 3500 50  0001 C CNN "Spice_Primitive"
+	1    6650 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D26
+U 1 1 5EA40523
+P 6650 4000
+F 0 "D26" H 6643 3745 50  0000 C CNN
+F 1 "XM" H 6643 3836 50  0000 C CNN
+F 2 "" H 6650 4000 50  0001 C CNN
+F 3 "~" H 6650 4000 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 6650 4000 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 6650 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6650 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 6650 4000 50  0001 C CNN "Spice_Primitive"
+	1    6650 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D27
+U 1 1 5EA4052D
+P 7350 3500
+F 0 "D27" H 7343 3245 50  0000 C CNN
+F 1 "XM" H 7343 3336 50  0000 C CNN
+F 2 "" H 7350 3500 50  0001 C CNN
+F 3 "~" H 7350 3500 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 7350 3500 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 7350 3500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7350 3500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 7350 3500 50  0001 C CNN "Spice_Primitive"
+	1    7350 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D28
+U 1 1 5EA40537
+P 7350 4000
+F 0 "D28" H 7343 3745 50  0000 C CNN
+F 1 "XM" H 7343 3836 50  0000 C CNN
+F 2 "" H 7350 4000 50  0001 C CNN
+F 3 "~" H 7350 4000 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 7350 4000 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 7350 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7350 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 7350 4000 50  0001 C CNN "Spice_Primitive"
+	1    7350 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D29
+U 1 1 5EA40541
+P 8050 3500
+F 0 "D29" H 8043 3245 50  0000 C CNN
+F 1 "XM" H 8043 3336 50  0000 C CNN
+F 2 "" H 8050 3500 50  0001 C CNN
+F 3 "~" H 8050 3500 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 8050 3500 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 8050 3500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8050 3500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 8050 3500 50  0001 C CNN "Spice_Primitive"
+	1    8050 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D30
+U 1 1 5EA4054B
+P 8050 4000
+F 0 "D30" H 8043 3745 50  0000 C CNN
+F 1 "XM" H 8043 3836 50  0000 C CNN
+F 2 "" H 8050 4000 50  0001 C CNN
+F 3 "~" H 8050 4000 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 8050 4000 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 8050 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8050 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 8050 4000 50  0001 C CNN "Spice_Primitive"
+	1    8050 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D31
+U 1 1 5EA40555
+P 8750 3500
+F 0 "D31" H 8743 3245 50  0000 C CNN
+F 1 "XM" H 8743 3336 50  0000 C CNN
+F 2 "" H 8750 3500 50  0001 C CNN
+F 3 "~" H 8750 3500 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 8750 3500 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 8750 3500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8750 3500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 8750 3500 50  0001 C CNN "Spice_Primitive"
+	1    8750 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D32
+U 1 1 5EA4055F
+P 8750 4000
+F 0 "D32" H 8743 3745 50  0000 C CNN
+F 1 "XM" H 8743 3836 50  0000 C CNN
+F 2 "" H 8750 4000 50  0001 C CNN
+F 3 "~" H 8750 4000 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 8750 4000 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 8750 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8750 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 8750 4000 50  0001 C CNN "Spice_Primitive"
+	1    8750 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 3500 3350 3500
+Wire Wire Line
+	3350 3500 3350 3050
+Wire Wire Line
+	3350 3050 9250 3050
+Wire Wire Line
+	9250 3050 9250 2050
+Text Label 3550 3500 0    50   ~ 0
+8
+Connection ~ 3500 3500
+$Comp
+L pspice:0 #GND02
+U 1 1 5EA4577E
+P 7200 5200
+F 0 "#GND02" H 7200 5100 50  0001 C CNN
+F 1 "0" H 7200 5077 50  0000 C CNN
+F 2 "" H 7200 5200 50  0001 C CNN
+F 3 "~" H 7200 5200 50  0001 C CNN
+	1    7200 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4950 7200 5200
+Wire Wire Line
+	7200 4950 7050 4950
+Wire Wire Line
+	3350 4950 3550 4950
+Wire Wire Line
+	4750 4950 4950 4950
+Wire Wire Line
+	4050 4950 4250 4950
+Wire Wire Line
+	4750 5450 4950 5450
+Wire Wire Line
+	4050 5450 4250 5450
+Wire Wire Line
+	6850 5450 7050 5450
+Wire Wire Line
+	7050 5450 7050 4950
+Connection ~ 7050 4950
+Wire Wire Line
+	7050 4950 6850 4950
+Wire Wire Line
+	3550 5450 3550 4950
+Wire Wire Line
+	3550 5450 3750 5450
+Connection ~ 3550 4950
+Wire Wire Line
+	3550 4950 3750 4950
+Wire Wire Line
+	4250 5450 4250 4950
+Connection ~ 4250 5450
+Wire Wire Line
+	4250 5450 4450 5450
+Connection ~ 4250 4950
+Wire Wire Line
+	4250 4950 4450 4950
+Wire Wire Line
+	4950 5450 4950 4950
+Connection ~ 4950 5450
+Wire Wire Line
+	4950 5450 5150 5450
+Connection ~ 4950 4950
+Wire Wire Line
+	4950 4950 5150 4950
+Text Label 3600 4950 0    50   ~ 0
+16
+Text Label 4300 4950 0    50   ~ 0
+17
+Text Label 5000 4950 0    50   ~ 0
+18
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D33
+U 1 1 5EA457A6
+P 3900 4950
+F 0 "D33" H 3893 4695 50  0000 C CNN
+F 1 "XM" H 3893 4786 50  0000 C CNN
+F 2 "" H 3900 4950 50  0001 C CNN
+F 3 "~" H 3900 4950 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 3900 4950 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 3900 4950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3900 4950 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 3900 4950 50  0001 C CNN "Spice_Primitive"
+	1    3900 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D34
+U 1 1 5EA457B0
+P 3900 5450
+F 0 "D34" H 3893 5195 50  0000 C CNN
+F 1 "XM" H 3893 5286 50  0000 C CNN
+F 2 "" H 3900 5450 50  0001 C CNN
+F 3 "~" H 3900 5450 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 3900 5450 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 3900 5450 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3900 5450 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 3900 5450 50  0001 C CNN "Spice_Primitive"
+	1    3900 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D35
+U 1 1 5EA457BA
+P 4600 4950
+F 0 "D35" H 4593 4695 50  0000 C CNN
+F 1 "XM" H 4593 4786 50  0000 C CNN
+F 2 "" H 4600 4950 50  0001 C CNN
+F 3 "~" H 4600 4950 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 4600 4950 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 4600 4950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4600 4950 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 4600 4950 50  0001 C CNN "Spice_Primitive"
+	1    4600 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D36
+U 1 1 5EA457C4
+P 4600 5450
+F 0 "D36" H 4593 5195 50  0000 C CNN
+F 1 "XM" H 4593 5286 50  0000 C CNN
+F 2 "" H 4600 5450 50  0001 C CNN
+F 3 "~" H 4600 5450 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 4600 5450 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 4600 5450 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4600 5450 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 4600 5450 50  0001 C CNN "Spice_Primitive"
+	1    4600 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D37
+U 1 1 5EA457CE
+P 5300 4950
+F 0 "D37" H 5293 4695 50  0000 C CNN
+F 1 "XM" H 5293 4786 50  0000 C CNN
+F 2 "" H 5300 4950 50  0001 C CNN
+F 3 "~" H 5300 4950 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 5300 4950 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 5300 4950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5300 4950 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 5300 4950 50  0001 C CNN "Spice_Primitive"
+	1    5300 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D38
+U 1 1 5EA457D8
+P 5300 5450
+F 0 "D38" H 5293 5195 50  0000 C CNN
+F 1 "XM" H 5293 5286 50  0000 C CNN
+F 2 "" H 5300 5450 50  0001 C CNN
+F 3 "~" H 5300 5450 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 5300 5450 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 5300 5450 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5300 5450 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 5300 5450 50  0001 C CNN "Spice_Primitive"
+	1    5300 5450
+	-1   0    0    1   
+$EndComp
+Text Label 3150 2050 0    50   ~ 0
+IN
+Wire Wire Line
+	3350 4950 3350 4500
+Wire Wire Line
+	3350 4500 9250 4500
+Wire Wire Line
+	9250 4500 9250 3500
+Connection ~ 3500 2050
+Wire Wire Line
+	5450 4950 5650 4950
+Wire Wire Line
+	5450 5450 5650 5450
+Wire Wire Line
+	5650 5450 5650 4950
+Connection ~ 5650 5450
+Wire Wire Line
+	5650 5450 5850 5450
+Connection ~ 5650 4950
+Wire Wire Line
+	5650 4950 5850 4950
+Text Label 5700 4950 0    50   ~ 0
+19
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D39
+U 1 1 5EA89C5D
+P 6000 4950
+F 0 "D39" H 5993 4695 50  0000 C CNN
+F 1 "XM" H 5993 4786 50  0000 C CNN
+F 2 "" H 6000 4950 50  0001 C CNN
+F 3 "~" H 6000 4950 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 6000 4950 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 6000 4950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6000 4950 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 6000 4950 50  0001 C CNN "Spice_Primitive"
+	1    6000 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D40
+U 1 1 5EA89C67
+P 6000 5450
+F 0 "D40" H 5993 5195 50  0000 C CNN
+F 1 "XM" H 5993 5286 50  0000 C CNN
+F 2 "" H 6000 5450 50  0001 C CNN
+F 3 "~" H 6000 5450 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 6000 5450 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 6000 5450 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6000 5450 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 6000 5450 50  0001 C CNN "Spice_Primitive"
+	1    6000 5450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 4950 6350 4950
+Wire Wire Line
+	6150 5450 6350 5450
+Wire Wire Line
+	6350 5450 6350 4950
+Connection ~ 6350 5450
+Wire Wire Line
+	6350 5450 6550 5450
+Connection ~ 6350 4950
+Wire Wire Line
+	6350 4950 6550 4950
+Text Label 6400 4950 0    50   ~ 0
+20
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D41
+U 1 1 5EA900D9
+P 6700 4950
+F 0 "D41" H 6693 4695 50  0000 C CNN
+F 1 "XM" H 6693 4786 50  0000 C CNN
+F 2 "" H 6700 4950 50  0001 C CNN
+F 3 "~" H 6700 4950 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 6700 4950 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 6700 4950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6700 4950 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 6700 4950 50  0001 C CNN "Spice_Primitive"
+	1    6700 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L AE01.17.06.000:LED_ALT_SIM D42
+U 1 1 5EA900E3
+P 6700 5450
+F 0 "D42" H 6693 5195 50  0000 C CNN
+F 1 "XM" H 6693 5286 50  0000 C CNN
+F 2 "" H 6700 5450 50  0001 C CNN
+F 3 "~" H 6700 5450 50  0001 C CNN
+F 4 "models/XLamp-XML-spice.txt" H 6700 5450 50  0001 C CNN "Spice_Lib_File"
+F 5 "XM" H 6700 5450 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6700 5450 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "D" H 6700 5450 50  0001 C CNN "Spice_Primitive"
+	1    6700 5450
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
